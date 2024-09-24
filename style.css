@@ -4,8 +4,12 @@
 }
 
 body{
-    background-color: aqua;
+    background-color:#1d2158;
     text-align: center;
+}
+
+.soni{
+    color:#a30303;
 }
 
 .container{
@@ -33,7 +37,7 @@ body{
     box-shadow: o o 1 rgba(0 0 0 0.1);
     font-size: 8vmin;
     color: brown;
-    background-color: yellow;
+    background-color: #ffb400;
 }
 
 #reset-btn{
