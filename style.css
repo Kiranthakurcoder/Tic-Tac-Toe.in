@@ -1,63 +1,105 @@
-
- *{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-   background-image: url(bgm.jpg);
-    text-align: center;
+body {
+  background-image: url(bgm.jpg);
+  text-align: center;
 }
 
-.heading-tag{
-    color: #FAFDF6;
-}
-.container{
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center ;
+.heading-tag {
+  color: #fafdf6;
 }
 
-.game{
-    height: 60vmin;
-    width: 64vmin;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center ;
-    gap: 1rem;
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.box{
-    height: 18vmin;
-    width: 18vmin;
-    border-radius: 1rem;
-    border: none;
-    box-shadow: o o 1 rgba(0 0 0 0.1);
-    font-size: 8vmin;
-    color: brown;
-    background-color: #ffb400;
+.game {
+  height: 60vmin;
+  width: 64vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
-#reset-btn{
-    padding: 1rem;
-    border-radius: 1rem;
-    font-size: 1.25rem;
-    color: aliceblue;
-    background-color: black;
-    border: none;
-    margin-top: 0rem;
-    
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: o o 1 rgba(0 0 0 0.1);
+  font-size: 8vmin;
+  color: brown;
+  background-color: #ffb400;
 }
-#new-btn{
-    padding: 1rem;
-    border-radius: 1rem;
-    font-size: 1.25rem;
-    color: aliceblue;
-    background-color: black;
-    border: none;
+
+#reset-btn {
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  color: aliceblue;
+  background-color: black;
+  border: none;
+  margin-top: 0rem;
 }
-.hide{
-    display:none;
+
+#new-btn {
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  color: aliceblue;
+  background-color: black;
+  border: none;
+  margin-top: 13px;
+}
+
+.hide {
+  display: none;
+}
+
+.msg-container {
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 1rem 2rem;
+
+  border-radius: 15px;
+
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .game {
+    width: 90vmin;
+    height: 90vmin;
+    gap: 0.5rem;
+  }
+
+  .container {
+    height: 55vh;
+  }
+
+  .box {
+    width: 28vmin;
+    height: 28vmin;
+    font-size: 6vmin;
+  }
+
+  #reset-btn,
+  #new-btn {
+    font-size: 1rem;
+    padding: 0.8rem;
+    margin-top: 8px;
+  }
+
+  .heading-tag {
+    font-size: 1.5rem;
+    margin-bottom: -2rem;
+  }
 }
