@@ -24,7 +24,6 @@ const restgame = () => {
   msgcon.classList.add("hide");
 };
 
-
 const anabeldboxes = () => {
   for (let box of boxes) {
     box.disabled = false;
@@ -35,8 +34,6 @@ const anabeldboxes = () => {
 // Adding event listeners to each box
 boxes.forEach((box) => {
   box.addEventListener("click", () => {
-    console.log("this was clicked");
-
     if (turnO) {
       box.innerText = "O";
       box.style.color = "#000814";
@@ -54,8 +51,8 @@ boxes.forEach((box) => {
 
 // Function to show the winner
 const showwinnwe = (winner) => {
-  msg.innerText =`Congratulations! Winner is ${winner}`;
-  msg.style.color="#EAE151"
+  msg.innerText = `Congratulations! Winner is ${winner}`;
+  msg.style.color = "#EAE151";
   msgcon.classList.remove("hide");
   disabledboxes();
 };
@@ -76,13 +73,11 @@ const checkwinner = () => {
   }
 };
 
-
 const disabledboxes = () => {
   for (let box of boxes) {
     box.disabled = true;
   }
 };
-
 
 newgame.addEventListener("click", restgame);
 resetbtn.addEventListener("click", restgame);
